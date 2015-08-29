@@ -8,7 +8,7 @@ proxy:
         - ./containers/proxy/proxy.conf:/etc/nginx/conf.d/my_proxy.conf
 
 jorgeben:
-    build: "./containers/fumes/"
+    image: lcfumes/nginx-php56
     ports:
         - "80"
     environment:
