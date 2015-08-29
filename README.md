@@ -31,20 +31,6 @@ chmod +x /usr/local/bin/docker-compose
 ```
 ## To Run ##
 
-### if you want to build a container. Not necessary. ###
-
-```
-docker build -tq jorgeben/fumes containers/fumes
-```
-
-### start ###
-
-First time
-
-```
-docker-compose build
-```
-
 Up machines
 ```
 docker-compose up -d
