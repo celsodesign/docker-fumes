@@ -12,9 +12,9 @@ jorgeben:
     ports:
         - "80"
     environment:
-       - VIRTUAL_HOST=fumes.dev,*.fumes.dev
+       - VIRTUAL_HOST=webproject.dev,*.webproject.dev
     volumes:
-       - ../fumes.com.br:/shop/www/htdocs/fumes.com.br
+       - ../:/srv/webproject
     links:
        - database:database.dev
 
