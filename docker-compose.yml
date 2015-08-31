@@ -19,7 +19,7 @@ jorgeben:
        - database:database.dev
 
 database:
-    image: mariadb:latest
+    image: mariadb:10.0
     environment:
         - MYSQL_ROOT_PASSWORD=root
         - VIRTUAL_HOST=database.dev
