@@ -19,7 +19,7 @@ RUN pip install supervisor
 
 # Adding the configuration file of the nginx
 ADD nginx.conf /etc/nginx/nginx.conf
-ADD fumes.conf /etc/nginx/conf.d/default.conf
+ADD web.conf /etc/nginx/conf.d/default.conf
 
 # Adding the configuration file of the Supervisor
 ADD supervisord.conf /etc/
