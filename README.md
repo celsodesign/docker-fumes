@@ -1,8 +1,10 @@
 ## lcfumes/docker ##
 
-### Containers### 
+### Containers ### 
 Proxy
+
 Centos:7, Nginx, PHP5.6, Php-Fpm
+
 MariaDb:10.0
 
 
@@ -24,15 +26,17 @@ This project was made to use with composer.json. If you want to run it alone, yo
 
 ### About the project ###
 
-This project was made to run in the ZendFramework. If you use another framework, my sugestion is to create a simbolic link called "public". Example in Silex Framework
-
 You need to create a tmp folder, with write permission
 
 ```
 cd /project/
-mkdir tmp/nginx
+mkdir tmp/
 mkdir tmp/nginx
 chmod -R 777 tmp
+```
+
+This project was made to run in the ZendFramework. If you use another framework, my sugestion is to create a simbolic link called "public". Example in Silex Framework
+```
 cd /project/
 ln -s web public
 ```
@@ -43,7 +47,7 @@ ln -s web public
 wget -qO- https://get.docker.com/ | sh
 ```
 
-install Docker-Compose
+###  Install Docker-Compose ###
 
 ```
 curl -L https://github.com/docker/compose/releases/download/1.4.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
