@@ -9,6 +9,7 @@ MariaDb:10.0
 
 
 This project was made to use with composer.json. To run it alone, you need do change some configurations in the file docker-compose.yml. 
+
 If you wanna run it alone, you can write me. It will be a pleasure to help you.
 
 ### Using in composer.json ###
@@ -41,7 +42,7 @@ composer install --no-dev
 
 ### About the project ###
 
-You need to create a tmp folder, with write permission.
+You need to create a "tmp/nginx" folder, with write permission.
 
 ```
 cd /project/
@@ -50,7 +51,9 @@ mkdir tmp/nginx
 chmod -R 777 tmp
 ```
 
-This project was made to run in the ZendFramework. If you use another framework, my sugestion is to create a simbolic link called "public". Example in Silex Framework.
+This project was made to run in the ZendFramework. If you use another framework, my sugestion is to create a simbolic link called "public". 
+
+Example in Silex Framework.
 ```
 cd /project/
 ln -s web public
