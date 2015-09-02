@@ -19,9 +19,23 @@ This project was made to use with composer.json. If you want to run it alone, yo
       "type": "git"
     }
 ],
-"require": {
+"require-dev": {
     "lcfumes/docker": "dev-master"
 }
+```
+
+### Runing Composer ###
+
+Local Machine:
+
+```
+composer install
+```
+
+Live Machine
+
+```
+composer install --no-dev
 ```
 
 ### About the project ###
