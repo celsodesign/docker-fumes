@@ -1,6 +1,6 @@
 ## lcfumes/docker ##
 
-### Containers ### 
+### Containers ###
 Proxy
 
 Centos:7, Nginx, PHP5.6, Php-Fpm
