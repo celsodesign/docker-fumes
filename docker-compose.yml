@@ -14,7 +14,7 @@ jorgeben:
     environment:
        - VIRTUAL_HOST=webproject.dev,*.webproject.dev
     volumes:
-       - ../:/srv/webproject
+       - ../../../:/srv/webproject
     links:
        - database:database.dev
 
