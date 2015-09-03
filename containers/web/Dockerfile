@@ -9,7 +9,7 @@ ADD nginx.repo /etc/yum.repos.d/nginx.repo
 
 RUN yum -y install nginx && yum clean all 
 
-RUN yum -y --enablerepo=remi,remi-php56 install nginx php-fpm php-common
+RUN yum -y --enablerepo=remi,remi-php56 install nginx php-fpm php-common php-pear php-pdo php-mysqlnd php-mcrypt php-mbstring php-gd php-pecl-memcache php-pecl-memcached 
 
 #RUN yum -y install mariadb && yum clean all
 
