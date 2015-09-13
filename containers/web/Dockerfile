@@ -19,6 +19,8 @@ ADD web.conf /etc/nginx/conf.d/default.conf
 
 ADD supervisord.conf /etc/
 
+RUN sed -i "s/;date.timezone =/date.timezone = America\/Sao_Paulo/" /etc/php.ini
+
 EXPOSE 80
 
 CMD ["supervisord", "-n"]
