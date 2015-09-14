@@ -12,19 +12,28 @@ jorgeben:
     ports:
         - "80"
     environment:
-       - VIRTUAL_HOST=webproject.dev,*.webproject.dev
+       - VIRTUAL_HOST=webproject.dev.io,*.webproject.dev.io
     volumes:
        - ../:/srv/webproject
     links:
-       - database:database.dev
+       - database:database.dev.io
+       - elasticsearch:elasticsearch.dev.io
 
 database:
     image: mariadb:latest
     environment:
         - MYSQL_ROOT_PASSWORD=root
-        - VIRTUAL_HOST=database.dev
+        - VIRTUAL_HOST=database.dev.io
     volumes:
         - ./tmp/mysql:/var/lib/mysql
         - ./containers/database/my.cnf:/etc/mysql/conf.d/custom.cnf
     ports:
         - "3306:3306"
+
+elasticsearch:
+   build: "./containers/elasticsearch"
+   environment:
+       - VIRTUAL_HOST=elasticsearch.dev.io
+   ports:
+       - "9200:9500"
+   
