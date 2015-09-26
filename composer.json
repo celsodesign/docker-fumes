@@ -1,6 +1,6 @@
 {
     "name": "lcfumes/docker",
-    "description": "Docker to Local Projects",
+    "description": "Docker to Local Projects PHP5.6 MariaDb Elasticsearch",
     "license": "All rights by lcfumes@gmail.com",
     "keywords": [ "docker", "composer" ],
     "target-dir": "",
