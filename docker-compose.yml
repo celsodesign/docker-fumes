@@ -16,8 +16,8 @@ jorgeben:
     volumes:
        - ../:/srv/webproject
     links:
-       - database:database.dev.io
        - elasticsearch:elasticsearch.dev.io
+       - database:database.dev.io
 
 database:
     image: mariadb:latest
