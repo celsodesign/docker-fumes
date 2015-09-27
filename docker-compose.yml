@@ -35,4 +35,4 @@ elasticsearch:
    environment:
       - VIRTUAL_HOST=elasticsearch.dev.io
    ports:
-      - "4200:4500"
+      - "9200:9500"
