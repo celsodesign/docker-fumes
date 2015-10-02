@@ -12,6 +12,12 @@ This project was made to use with composer.json. To run it alone, you need do ch
 
 If you wanna run it alone, you can write me. It will be a pleasure to help you.
 
+### Dependencies ###
+```
+apt-get install curl php5-cli php5-curl
+```
+
+
 ### Using in composer.json ###
 
 ```
@@ -63,6 +69,12 @@ ln -s web public
 
 ```
 wget -qO- https://get.docker.com/ | sh
+```
+
+### Added your user to Docker group ###
+
+```
+sudo usermod -aG docker YOUR_USER
 ```
 
 ###  Install Docker-Compose ###
